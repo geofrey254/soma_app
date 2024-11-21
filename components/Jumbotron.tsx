@@ -9,7 +9,7 @@ function Jumbotron() {
           Empowering Students Across Kenya
         </h1>
         <p className="mb-8  font-normal text-gray-300 lg:text-xl sm:px-16 lg:px-48 dark:text-gray-400">
-          At Magneto, we believe every student deserves access to affordable,
+          At Soma, we believe every student deserves access to affordable,
           high-quality educational resources. Our platform is designed to
           provide students with the tools they need to succeed, from exam
           preparation to personalized learning paths.
