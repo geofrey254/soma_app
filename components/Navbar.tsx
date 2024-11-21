@@ -7,7 +7,7 @@ import { TbBooks } from "react-icons/tb";
 import Link from "next/link";
 
 function Navbar() {
-  const [menuOpen, setMenuOpen] = useState(true);
+  const [menuOpen, setMenuOpen] = useState(false);
 
   const handleNav = () => {
     setMenuOpen(!menuOpen);
@@ -35,7 +35,7 @@ function Navbar() {
               <Link href="/subjects">Subjects</Link>
             </li>
             <li>
-              <Link href="/Lessons">Lessons</Link>
+              <Link href="/lessons">Lessons</Link>
             </li>
             <li>
               <Link href="/subscription">Pricing</Link>
@@ -52,7 +52,7 @@ function Navbar() {
         {/* Mobile Menu */}
         <div
           className={
-            menuOpen
+            !menuOpen
               ? "collapse fixed w-0 h-[100%] left-4 top-[2000px] transition-all duration-700 ease-in-out md:hidden"
               : "fixed mobile_nav w-[90%] left-4 top-16 h-[100%] z-10 transition-all duration-700 ease-linear rounded-3xl shadow-xl shadow-[#8a6445] md:hidden"
           }
@@ -125,7 +125,7 @@ function Navbar() {
             <BiSolidFoodMenu
               size={30}
               className={
-                menuOpen
+                !menuOpen
                   ? "text-[#350203] cursor-pointer transition-all duration-700 ease-in-out"
                   : "hidden transition-all duration-700 ease-in-out"
               }
@@ -133,7 +133,7 @@ function Navbar() {
             <MdOutlineMenuBook
               size={30}
               className={
-                !menuOpen
+                menuOpen
                   ? "text-[#350203] cursor-pointer transition-all duration-700 ease-in-out"
                   : "hidden transition-all duration-700 ease-in-out"
               }
